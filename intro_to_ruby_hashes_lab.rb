@@ -28,8 +28,9 @@ end
 def update_counting_hash(hash, key)
   hash[key]
    if hash[key] then
+     hash[key] = [1]
     hash[key]+=1 
-    hash[key] = [1]
+   
   else
     puts "Key Not Found"
   end 
